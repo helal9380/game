@@ -328,7 +328,7 @@ footer {
     font-size: 2rem;
 }
 .footer-list-container {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     margin-bottom: 50px;
     display: grid;
     /* justify-content: center; */
@@ -490,13 +490,13 @@ footer {
     }
     .footer-list-container {
         /* padding: 0px 46px; */
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
     .social-icons {
         /* padding: 0px 80px; */
         gap: 20px;
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(4,1fr);
     }
     .privecy-container  {
         grid-template-columns: repeat(2, 1fr);
