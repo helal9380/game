@@ -16,12 +16,11 @@ body {
 }
 nav,
 .margin-all {
-    max-width: 1140px;
+    max-width: 1230px;
     margin: 0 auto;
 }
 section {
-    /* margin: 40px 0px; */
-    padding: 40px 0px;
+    padding: 80px 0px;
 }
 li {
     list-style: none;
@@ -60,7 +59,7 @@ p {
     margin-right: 10px;
 }
 .logo h2 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 700;
 }
 .g-color {
@@ -126,7 +125,6 @@ p {
 .banner-info ul li {
     list-style: none;
     margin-bottom: 5px;
-    font-size: 1.2rem;
     font-weight: 500;
 }
 .banner-info ul li img {
@@ -144,7 +142,6 @@ p {
     gap: 15px;
 }
 .gamer-info {
-    width: 50%;
     text-align: right;
 }
 .gamer-info p {
@@ -154,7 +151,6 @@ p {
     margin-bottom: 20px;
 }
 .gamer-info h3 {
-    /* font-size: 1.5rem; */
     font-weight: 600;
 }
 .gamer-info h4 {
@@ -181,9 +177,20 @@ p {
     margin-bottom: 49px;
 }
 .service-title h2 {
-    /* font-size: 2rem; */
     font-weight: 700;
     margin-bottom: 5px;
+}
+#three-box {
+    position: relative;
+}
+#three-box {}
+
+.play {
+    right: 20%;
+    cursor: pointer;
+    top: 46%;
+    position: absolute;
+    transform: translate(-50%, -50%);
 }
 .linear {
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
@@ -201,12 +208,55 @@ p {
     font-size: .9rem;
     margin-top: 5px;
 }
+.s-box {
+    width: 100%;
+    position: relative;
+}
+.service-box1 {
+    height: 350px;
+    width: 100%;
+    background-image: url(../images/Rectangle\ 5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.service-box2 {
+    height: 350px;
+    width: 100%;
+    background-image: url(../images/Rectangle\ 6.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.service-box3 {
+    border-radius: 10px;
+    height: 350px;
+    width: 100%;
+    background-image: linear-gradient(#0000009e,#000), url(../images/Rectangle\ 7.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.play img {
+    margin: auto;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.service-box4 {
+    height: 350px;
+    width: 100%;
+    background-image: url(../images/Rectangle\ 4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.service-box1.s-box p,
+.service-box2.s-box p,
+.service-box3.s-box p,
+.service-box4.s-box p {
+    position: absolute;
+    bottom: -50px;
+}
 /* play instantly section style */
 .play-instant-container {
     margin-bottom: 50px;
-}
-.play-instant-info {
-    width: 100%;
 }
 .play-instant-info h2 {
     font-size: 3rem;
@@ -217,14 +267,14 @@ p {
     width: 100%;
 }
 .play-instant-img {
-    width: 100%;
+    width: 40%;
     position: relative;
 }
 .position-img {
     width: 50%;
     position: absolute;
-    bottom: -14%;
-    right: 64%;
+    bottom: -18%;
+    right: 72%;
 }
 /* career section style */
 #career {
@@ -276,20 +326,18 @@ p {
 }
 /* review section style */
 .review-container {
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
     align-content: center;
 }
 .single-review-box {
-    justify-content: start;
-    background-color: transparent;
+    flex-basis: 190px;
     display: flex;
     border-radius: 30px;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
     transition: .5s;
 }
 .single-review-box:hover {
@@ -298,14 +346,11 @@ p {
     cursor: pointer;
 }
 .single-review-box img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 .single-review-box h3 {
     font-size: .8rem;
-}
-.margin-left {
-    margin-left: 60px;
 }
 
 /* footer section style */
@@ -328,12 +373,19 @@ footer {
     font-size: 2rem;
 }
 .footer-list-container {
+    flex-wrap: wrap;
     grid-template-columns: repeat(6, 1fr);
     margin-bottom: 50px;
-    display: grid;
-    /* justify-content: center; */
+    display: flex;
+    justify-content: center;
     align-items: center;
     gap: 22px;
+}
+.footer-list-container li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 120px;
 }
 .social-icons {
     margin-bottom: 50px;
@@ -343,16 +395,20 @@ footer {
     gap: 50px;
 }
 .social-icons i {
+    display: flex;
+    flex-basis: 100px;
+    justify-content: center;
     font-size: 2rem;
 }
 .privecy-container {
     grid-template-columns: repeat(4, 1fr);
     color: rgba(255, 255, 255, 0.60);
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 26px;
 }
 
 .copyright {
@@ -377,7 +433,10 @@ footer {
         flex-direction: column;
     }
     .margin-all {
-        width: 80%;
+        width: 82%;
+    }
+    section {
+        padding: 40px 0px;
     }
     .banner-container {
         flex-direction: column-reverse;
@@ -386,32 +445,20 @@ footer {
     .meno-items ul li {
         margin-bottom: 20px;
     }
-    .btn-with-icons {
-        margin-top: 15px;
-    }
     .btn-with-icons img {
-        width: 40px;
-        margin-left: 20px;
+        width: 22px;
+        margin-left: 5px;
     }
     .logo img {
-        width: 150px;
+        width: 100px;
     }
     .logo {
-        padding: 60px 0px;
-    }
-    .logo h2 {
-        /* font-size: 6rem; */
+        padding: 25px 0px;
     }
     .banner-info {
         margin-top: 60px;
-        text-align: center;
+        text-align: left;
         width: 100%;
-    }
-    .banner-info h2 {
-        /* font-size: 3rem; */
-    }
-    .banner-info h1 {
-        /* font-size: 6rem; */
     }
     .banner-img {
         width: 80%;
@@ -421,36 +468,30 @@ footer {
     }
     .banner-info ul li {
         margin-bottom: 3px;
-        /* font-size: 2rem; */
     }
     .gamer-info {
         text-align: center;
         width: 100%;
     }
-    .gamer-info h2 {
-        /* font-size: 3.5rem; */
-    }
     .gamer-info p {
-        /* font-size: 2rem; */
-        margin: 30px 0px;
+        width: 240px;
+        margin: 20px auto;
     }
-    .gamer-info h4 {
-        /* margin-top: 3px; */
-        /* font-size: 2rem; */
-    }
-    .gamer-info h3 {
-        /* font-size: 3rem; */
+    .service-title p {
+        font-size: .7rem;
     }
     .gamer-info button {
         margin-bottom: 20px;
         padding: 20px 30px;
-        /* font-size: 2rem; */
     }
     .gamer-img {
         width: 100%;
     }
     .service-box {
         margin-bottom: 20px;
+    }
+    .s-box {
+        margin-bottom: 50px;
     }
     .play-instant-info {
         text-align: center;
@@ -474,10 +515,6 @@ footer {
     .career-img {
         width: 100%;
     }
-    .review-container {
-        gap: 10px;
-        grid-template-columns: repeat(3,1fr);
-    }
     .single-review-box img {
         width: 36px;
         height: 36px;
@@ -488,19 +525,28 @@ footer {
     .margin-left {
         margin-left: 0px;
     }
+    .single-review-box {
+        flex-basis: 102px;
+    }
+    .single-review-box img {
+        width: 28px;
+        height: 28px;
+    }
     .footer-list-container {
-        /* padding: 0px 46px; */
         grid-template-columns: repeat(4, 1fr);
     }
+    .footer-list-container li {
+        flex-basis: 100px;
+    }
     .social-icons {
-        /* padding: 0px 80px; */
         gap: 20px;
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
     }
     .privecy-container  {
         grid-template-columns: repeat(2, 1fr);
-        /* padding: 0px 60px; */
     }
 
 } 
@@ -517,5 +563,47 @@ footer {
     }
     .margin-all {
         width: 90%;
+    }
+    .single-review-box {
+        flex-basis: 150px;
+    }
+    .career-info {
+        width: 100%;
+        padding: 20px;
+    }
+    .career-img {
+        width: 80%;
+    }
+    .career-btn {
+        display: block;
+        margin: 30px auto;
+    }
+    .gamer-img {
+        width: 100%;
+    }
+    .gamer-info {
+        width: 100%;
+        text-align: left;
+    }
+    .play {
+        right: 37%;
+    }
+    .s-box {
+        margin-bottom: 60px;
+    }
+    section {
+        padding: 60px 0px;
+    }
+    .play-instant-info,
+    .play-instant-img  {
+        width: 70%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .footer-list-container li {
+        flex-basis: 125px;
+    }
+    .social-icons i {
+        flex-basis: 0px;
     }
 } 
