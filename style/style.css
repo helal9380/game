@@ -16,7 +16,7 @@ body {
 }
 nav,
 .margin-all {
-    max-width: 1230px;
+    max-width: 80%;
     margin: 0 auto;
 }
 section {
@@ -209,6 +209,7 @@ p {
     margin-top: 5px;
 }
 .s-box {
+    border-radius: 10px;
     width: 100%;
     position: relative;
 }
@@ -433,7 +434,7 @@ footer {
         flex-direction: column;
     }
     .margin-all {
-        width: 82%;
+        width: 90%;
     }
     section {
         padding: 40px 0px;
@@ -526,7 +527,7 @@ footer {
         margin-left: 0px;
     }
     .single-review-box {
-        flex-basis: 102px;
+        flex-basis: 95px;
     }
     .single-review-box img {
         width: 28px;
